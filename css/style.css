@@ -97,6 +97,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 24px;
+    overflow: hidden;
 }
 
 .size-50 {
@@ -493,7 +494,38 @@ a.active {
     /* background: url(../img/portfolio/05.jpg)no-repeat; */
     /* height: 823px; */
     height: auto;
-    
+}
+#about .h-50{
+    padding-top: 10px;
+}
+#about .h-50 span{
+    /* background-color: #3d6eca; */
+    /* color: #fff; */
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 10px;
+    /* padding: 3px 6px; */
+    /* border-radius: 6px; */
+}
+#about .title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+#about .title span{
+    background-color: #54C2EF;
+    /* font-style: italic; */
+    color: #fff;
+    padding: 0 3px;
+
+    /* text-decoration: underline; */
+    /* text-underline-offset: 3px; */
+    /* text-decoration-thickness: 3px; */
+    /* text-decoration-color: #54c2ef; */
+}
+#about .contents{
+    font-size: 15px;
+    line-height: 1.8em;
 }
 
 .about-img-div img {
@@ -503,15 +535,21 @@ a.active {
 
 .about-border {
     position: absolute;
-    border: 10px solid transparent;
-    border-image: linear-gradient(to right, #3d6eca 10%, #a4eaff 100%);
+    border: 10px solid #3d6eca;
     border-image-slice: 1;
     width: 402px;
     height: 424px;
     top: 40px;
     left: 50px;
     z-index: 1;
+    /* border-radius: 200px; */
+    /* transform: rotate(32deg); */
+    /* transform-origin: top left; */
+    transform: skew(5deg, 22deg);
 }
+
+
+
 @media (max-width:500px){
     .about-border{
         display: none;
@@ -547,7 +585,7 @@ a.active {
 ==================================================*/
 
 #projects {
-    padding: 100px 0 0;
+    padding: 100px 0;
     /* background: #D5EDFA; */
     /* background-color: #f3fbff; */
 }
