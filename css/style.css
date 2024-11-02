@@ -548,7 +548,11 @@ a.active {
     transform: skew(5deg, 22deg);
 }
 
-
+@media (max-width:991px){
+    #about{
+        padding: 100px 0 0 0;
+    }
+}
 
 @media (max-width:500px){
     .about-border{
